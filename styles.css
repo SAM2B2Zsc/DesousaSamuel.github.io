@@ -183,6 +183,7 @@ margin-bottom: 1.4rem;
   align-items: center;
   gap: 2rem;
   margin-top: 4rem;
+  
 }
 .bars-box {
   position: relative;
@@ -230,29 +231,27 @@ span {
   width: 40%;
 }
 
-.portfolio-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-left: 2px;
-}
 .portfolio-img {
   overflow: hidden;
   border-radius: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 5rem;
   margin-top: 2rem;
+  place-items: center;
 }
+
 .portfolio-img img {
-  width: 90%;
+  width: 30%; 
+  height: auto;
   display: block;
 }
+
 .portfolio-img img:hover {
   transform: scale(1.1);
   transition: 1s;
 }
+
 .contact-form {
   display: grid;
   place-items: center;
@@ -371,6 +370,11 @@ form textarea {
     padding: 1.5rem;
     display: block;
     background: var(--bg-color);
+  }
+  #darkmode {
+    position: absolute;
+    top: 1.4rem;
+    right: 2rem;
   }
   .scroll-down {
     display: none;
